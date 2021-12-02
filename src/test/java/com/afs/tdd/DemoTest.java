@@ -12,7 +12,7 @@ class DemoTest {
 
         //when
         marsRover.executeCommand(Command);
-        result = marsRover.getStatus();
+        String result = marsRover.getStatus();
 
         //then
         assertEquals("0 1 N", result);
