@@ -39,4 +39,8 @@ public class MarsRover {
     public String getStatus() {
         return String.format("%s %s %s", this.locationX, this.locationY, this.direction);
     }
+
+    public String executeCommands(String commands) {
+        return null;
+    }
 }
