@@ -67,7 +67,7 @@ class DemoTest {
         String result = marsRover.getStatus();
 
         //then
-        assertEquals("-1 0 W", result);
+        assertEquals("0 0 W", result);
     }
 
 }
