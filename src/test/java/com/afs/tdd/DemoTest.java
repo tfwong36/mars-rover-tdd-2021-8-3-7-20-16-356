@@ -30,5 +30,18 @@ class DemoTest {
         //then
         assertEquals("1 0 E", result);
     }
+    @Test
+    void should_return_Reduce_Y_by_1_when_move_given_X0_Y0_South_Move(){
+        //given
+        MarsRover marsRover = new MarsRover(0,0,'S');
+        char Command = 'M';
+
+        //when
+        marsRover.executeCommand(Command);
+        String result = marsRover.getStatus();
+
+        //then
+        assertEquals("0 -1 S", result);
+    }
 
 }
