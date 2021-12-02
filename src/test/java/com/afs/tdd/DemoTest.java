@@ -56,5 +56,18 @@ class DemoTest {
         //then
         assertEquals("-1 0 W", result);
     }
+    @Test
+    void should_return_Turn_West_when_given_X0_Y0_North_Turn_Left(){
+        //given
+        MarsRover marsRover = new MarsRover(0,0,'N');
+        char Command = 'M';
+
+        //when
+        marsRover.executeCommand(Command);
+        String result = marsRover.getStatus();
+
+        //then
+        assertEquals("-1 0 W", result);
+    }
 
 }
