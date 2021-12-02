@@ -20,7 +20,7 @@ public class MarsRover {
                 this.locationY--;
             else if (this.direction == 'W')
                 this.locationX--;
-            else // this.direction == 'N'
+            else
                 this.locationY++;
         } else if (command == 'L'){
             if (this.direction == 'N')
@@ -29,8 +29,6 @@ public class MarsRover {
                 this.direction = 'N';
             else if (this.direction == 'S')
                 this.direction = 'E';
-            else // this.direction == 'W'
-                this.direction = 'S';
         }
 
 
