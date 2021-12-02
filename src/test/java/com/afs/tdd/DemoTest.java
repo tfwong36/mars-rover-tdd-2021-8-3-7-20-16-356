@@ -8,10 +8,11 @@ class DemoTest {
     void should_return_Increment_Y_by_1_when_move_given_X0_Y0_North_Move(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'N');
-        char Command = 'M';
+        //char Command = 'M';
+        String Commands = "M";
 
         //when
-        marsRover.executeCommand(Command);
+        marsRover.executeCommands(Commands);
         String result = marsRover.getStatus();
 
         //then
@@ -21,10 +22,11 @@ class DemoTest {
     void should_return_Increment_X_by_1_when_move_given_X0_Y0_East_Move(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'E');
-        char Command = 'M';
+        //char Command = 'M';
+        String Commands = "M";
 
         //when
-        marsRover.executeCommand(Command);
+        marsRover.executeCommands(Commands);
         String result = marsRover.getStatus();
 
         //then
@@ -34,10 +36,11 @@ class DemoTest {
     void should_return_Reduce_Y_by_1_when_move_given_X0_Y0_South_Move(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'S');
-        char Command = 'M';
+        //char Command = 'M';
+        String Commands = "M";
 
         //when
-        marsRover.executeCommand(Command);
+        marsRover.executeCommands(Commands);
         String result = marsRover.getStatus();
 
         //then
@@ -47,10 +50,11 @@ class DemoTest {
     void should_return_Reduce_X_by_1_when_move_given_X0_Y0_West_Move(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'W');
-        char Command = 'M';
+        //char Command = 'M';
+        String Commands = "M";
 
         //when
-        marsRover.executeCommand(Command);
+        marsRover.executeCommands(Commands);
         String result = marsRover.getStatus();
 
         //then
@@ -60,10 +64,11 @@ class DemoTest {
     void should_return_Turn_West_when_given_X0_Y0_North_Turn_Left(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'N');
-        char Command = 'L';
+        //char Command = 'L';
+        String Commands = "L";
 
         //when
-        marsRover.executeCommand(Command);
+        marsRover.executeCommands(Commands);
         String result = marsRover.getStatus();
 
         //then
@@ -74,10 +79,11 @@ class DemoTest {
     void should_return_Turn_North_when_given_X0_Y0_East_Turn_Left(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'E');
-        char Command = 'L';
+        //char Command = 'L';
+        String Commands = "L";
 
         //when
-        marsRover.executeCommand(Command);
+        marsRover.executeCommands(Commands);
         String result = marsRover.getStatus();
 
         //then
@@ -88,10 +94,11 @@ class DemoTest {
     void should_return_Turn_East_when_given_X0_Y0_South_Turn_Left(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'S');
-        char Command = 'L';
+        //char Command = 'L';
+        String Commands = "L";
 
         //when
-        marsRover.executeCommand(Command);
+        marsRover.executeCommands(Commands);
         String result = marsRover.getStatus();
 
         //then
@@ -101,10 +108,11 @@ class DemoTest {
     void should_return_Turn_South_when_given_X0_Y0_West_Turn_Left(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'W');
-        char Command = 'L';
+        //char Command = 'L';
+        String Commands = "L";
 
         //when
-        marsRover.executeCommand(Command);
+        marsRover.executeCommands(Commands);
         String result = marsRover.getStatus();
 
         //then
@@ -114,10 +122,11 @@ class DemoTest {
     void should_return_Turn_East_when_given_X0_Y0_North_Turn_Right(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'N');
-        char Command = 'R';
+        //char Command = 'R';
+        String Commands = "R";
 
         //when
-        marsRover.executeCommand(Command);
+        marsRover.executeCommands(Commands);
         String result = marsRover.getStatus();
 
         //then
@@ -127,10 +136,11 @@ class DemoTest {
     void should_return_Turn_South_when_given_X0_Y0_East_Turn_Right(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'E');
-        char Command = 'R';
+        //char Command = 'R';
+        String Commands = "R";
 
         //when
-        marsRover.executeCommand(Command);
+        marsRover.executeCommands(Commands);
         String result = marsRover.getStatus();
 
         //then
@@ -140,10 +150,11 @@ class DemoTest {
     void should_return_Turn_West_when_given_X0_Y0_South_Turn_Right(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'S');
-        char Command = 'R';
+        //char Command = 'R';
+        String Commands = "R";
 
         //when
-        marsRover.executeCommand(Command);
+        marsRover.executeCommands(Commands);
         String result = marsRover.getStatus();
 
         //then
@@ -153,10 +164,11 @@ class DemoTest {
     void should_return_Turn_North_when_given_X0_Y0_West_Turn_Right(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'W');
-        char Command = 'R';
+        //char Command = 'R';
+        String Commands = "R";
 
         //when
-        marsRover.executeCommand(Command);
+        marsRover.executeCommands(Commands);
         String result = marsRover.getStatus();
 
         //then

@@ -15,8 +15,7 @@ public class MarsRover {
         this.locationY = locationY;
         this.direction = direction;
     }
-
-    public void executeCommand(char command) {
+    private void executeCommand(char command) {
         if (command == 'M'){
             if (this.direction == 'E')
                 this.locationX++;
