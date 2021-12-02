@@ -1,10 +1,14 @@
 package com.afs.tdd;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MarsRover {
 
     private int locationX;
     private int locationY;
     private char direction;
+    private final String directions = "NESW";
 
     public MarsRover(int locationX, int locationY, char direction) {
         this.locationX = locationX;
@@ -23,23 +27,11 @@ public class MarsRover {
             else
                 this.locationY++;
         } else if (command == 'L'){
-            if (this.direction == 'N')
-                this.direction = 'W';
-            else if (this.direction == 'E')
-                this.direction = 'N';
-            else if (this.direction == 'S')
-                this.direction = 'E';
-            else
-                this.direction = 'S';
+            int directionIndex = directions.indexOf(this.direction);
+            this.direction = directions.charAt(directionIndex - 1 < 0? directionIndex - 1 + directions.length() : directionIndex - 1);
         } else if (command == 'R'){
-            if (this.direction == 'N')
-                this.direction = 'E';
-            else if (this.direction == 'E')
-                this.direction = 'S';
-            else if (this.direction == 'S')
-                this.direction = 'W';
-            else // this.direction  == 'W'
-                this.direction = 'N';
+            int directionIndex = directions.indexOf(this.direction);
+            this.direction = directions.charAt(directionIndex + 1 == directions.length()? 0 : directionIndex + 1);
         }
 
 
