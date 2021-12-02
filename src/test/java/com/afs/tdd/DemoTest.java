@@ -174,4 +174,17 @@ class DemoTest {
         //then
         assertEquals("0 0 N", result);
     }
+    @Test
+    void should_return_X_Negative1_Y_Positive1_N_when_given_X0_Y0_North_BatchCommand(){
+        //given
+        MarsRover marsRover = new MarsRover(0,0,'N');
+        String Commands = "MLMR";
+
+        //when
+        marsRover.executeCommands(Commands);
+        String result = marsRover.getStatus();
+
+        //then
+        assertEquals("-1 1 N", result);
+    }
 }
