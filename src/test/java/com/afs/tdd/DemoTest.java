@@ -18,7 +18,7 @@ class DemoTest {
         assertEquals("0 1 N", result);
     }
     @Test
-    void should_return_Increment_X_by_1_when_move_given_X0_Y0_Eorth_Move(){
+    void should_return_Increment_X_by_1_when_move_given_X0_Y0_East_Move(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'E');
         char Command = 'M';
