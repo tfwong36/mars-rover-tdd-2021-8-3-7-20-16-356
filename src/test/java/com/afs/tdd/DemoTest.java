@@ -123,4 +123,17 @@ class DemoTest {
         //then
         assertEquals("0 0 E", result);
     }
+    @Test
+    void should_return_Turn_South_when_given_X0_Y0_East_Turn_Right(){
+        //given
+        MarsRover marsRover = new MarsRover(0,0,'E');
+        char Command = 'R';
+
+        //when
+        marsRover.executeCommand(Command);
+        String result = marsRover.getStatus();
+
+        //then
+        assertEquals("0 0 S", result);
+    }
 }
