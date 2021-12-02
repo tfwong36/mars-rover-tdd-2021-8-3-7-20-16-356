@@ -187,4 +187,30 @@ class DemoTest {
         //then
         assertEquals("-1 1 N", result);
     }
+    @Test
+    void should_return_Same_position_when_given_X0_Y0_North_BatchCommand1(){
+        //given
+        MarsRover marsRover = new MarsRover(0,0,'N');
+        String Commands = "MRRMRR";
+
+        //when
+        marsRover.executeCommands(Commands);
+        String result = marsRover.getStatus();
+
+        //then
+        assertEquals("0 0 N", result);
+    }
+    @Test
+    void should_return_02S_when_given_X0_Y0_North_BatchCommand2(){
+        //given
+        MarsRover marsRover = new MarsRover(0,0,'N');
+        String Commands = "RRRRLLLLRRRRLLLLRRRRLLLLMMLLMMLLMMLL";
+
+        //when
+        marsRover.executeCommands(Commands);
+        String result = marsRover.getStatus();
+
+        //then
+        assertEquals("0 2 S", result);
+    }
 }
