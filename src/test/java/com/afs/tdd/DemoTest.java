@@ -60,7 +60,7 @@ class DemoTest {
     void should_return_Turn_West_when_given_X0_Y0_North_Turn_Left(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'N');
-        char Command = 'M';
+        char Command = 'L';
 
         //when
         marsRover.executeCommand(Command);
