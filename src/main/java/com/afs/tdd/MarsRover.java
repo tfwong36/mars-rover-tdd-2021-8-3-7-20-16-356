@@ -15,10 +15,10 @@ public class MarsRover {
     public void executeCommand(char command) {
         if (this.direction == 'E')
             this.locationX++;
-        else if (this.direction == 'S')
-            this.locationY--;
         else if (this.direction == 'W')
             this.locationX--;
+        else if (this.direction == 'S')
+            this.locationY--;
         else
             this.locationY++;
     }
