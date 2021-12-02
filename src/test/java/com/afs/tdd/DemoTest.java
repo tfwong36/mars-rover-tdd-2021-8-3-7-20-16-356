@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class DemoTest {
     @Test
-    void should_return_Increment_Y_by_1_when_move_given_X0_Y0_North_Move(){
+    void should_return_Increment_Y_by_1_when_given_OneMove_X0_Y0_North_Move(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'N');
         //char Command = 'M';
@@ -19,7 +19,7 @@ class DemoTest {
         assertEquals("0 1 N", result);
     }
     @Test
-    void should_return_Increment_X_by_1_when_move_given_X0_Y0_East_Move(){
+    void should_return_Increment_X_by_1_when_given_OneMove_X0_Y0_East_Move(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'E');
         //char Command = 'M';
@@ -33,7 +33,7 @@ class DemoTest {
         assertEquals("1 0 E", result);
     }
     @Test
-    void should_return_Reduce_Y_by_1_when_move_given_X0_Y0_South_Move(){
+    void should_return_Reduce_Y_by_1_when_given_OneMove_X0_Y0_South_Move(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'S');
         //char Command = 'M';
@@ -47,7 +47,7 @@ class DemoTest {
         assertEquals("0 -1 S", result);
     }
     @Test
-    void should_return_Reduce_X_by_1_when_move_given_X0_Y0_West_Move(){
+    void should_return_Reduce_X_by_1_when_given_OneMove_X0_Y0_West_Move(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'W');
         //char Command = 'M';
@@ -61,7 +61,7 @@ class DemoTest {
         assertEquals("-1 0 W", result);
     }
     @Test
-    void should_return_Turn_West_when_given_X0_Y0_North_Turn_Left(){
+    void should_return_Turn_West_when_given_OneMove_X0_Y0_North_Turn_Left(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'N');
         //char Command = 'L';
@@ -76,7 +76,7 @@ class DemoTest {
     }
 
     @Test
-    void should_return_Turn_North_when_given_X0_Y0_East_Turn_Left(){
+    void should_return_Turn_North_when_given_OneMove_X0_Y0_East_Turn_Left(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'E');
         //char Command = 'L';
@@ -91,7 +91,7 @@ class DemoTest {
     }
 
     @Test
-    void should_return_Turn_East_when_given_X0_Y0_South_Turn_Left(){
+    void should_return_Turn_East_when_given_OneMove_X0_Y0_South_Turn_Left(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'S');
         //char Command = 'L';
@@ -105,7 +105,7 @@ class DemoTest {
         assertEquals("0 0 E", result);
     }
     @Test
-    void should_return_Turn_South_when_given_X0_Y0_West_Turn_Left(){
+    void should_return_Turn_South_when_given_OneMove_X0_Y0_West_Turn_Left(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'W');
         //char Command = 'L';
@@ -119,7 +119,7 @@ class DemoTest {
         assertEquals("0 0 S", result);
     }
     @Test
-    void should_return_Turn_East_when_given_X0_Y0_North_Turn_Right(){
+    void should_return_Turn_East_when_given_OneMove_X0_Y0_North_Turn_Right(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'N');
         //char Command = 'R';
@@ -133,7 +133,7 @@ class DemoTest {
         assertEquals("0 0 E", result);
     }
     @Test
-    void should_return_Turn_South_when_given_X0_Y0_East_Turn_Right(){
+    void should_return_Turn_South_when_given_OneMove_X0_Y0_East_Turn_Right(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'E');
         //char Command = 'R';
@@ -147,7 +147,7 @@ class DemoTest {
         assertEquals("0 0 S", result);
     }
     @Test
-    void should_return_Turn_West_when_given_X0_Y0_South_Turn_Right(){
+    void should_return_Turn_West_when_given_OneMove_X0_Y0_South_Turn_Right(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'S');
         //char Command = 'R';
@@ -161,7 +161,7 @@ class DemoTest {
         assertEquals("0 0 W", result);
     }
     @Test
-    void should_return_Turn_North_when_given_X0_Y0_West_Turn_Right(){
+    void should_return_Turn_North_when_given_OneMove_X0_Y0_West_Turn_Right(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'W');
         //char Command = 'R';
@@ -175,7 +175,7 @@ class DemoTest {
         assertEquals("0 0 N", result);
     }
     @Test
-    void should_return_X_Negative1_Y_Positive1_N_when_given_X0_Y0_North_BatchCommand(){
+    void should_return_X_Negative1_Y_Positive1_N_when_given_MultipleMove_X0_Y0_North_BatchCommand(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'N');
         String Commands = "MLMR";
@@ -188,7 +188,7 @@ class DemoTest {
         assertEquals("-1 1 N", result);
     }
     @Test
-    void should_return_Same_position_when_given_X0_Y0_North_BatchCommand1(){
+    void should_return_Same_position_when_given_MultipleMove_X0_Y0_North_BatchCommand1(){
         //given
         MarsRover marsRover = new MarsRover(0,0,'N');
         String Commands = "MRRMRR";
