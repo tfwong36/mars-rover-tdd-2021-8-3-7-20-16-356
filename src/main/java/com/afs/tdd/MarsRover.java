@@ -8,7 +8,7 @@ public class MarsRover {
     private int locationX;
     private int locationY;
     private char direction;
-    private final String directions = "NESW";
+    private final static String directions = "NESW";
 
     public MarsRover(int locationX, int locationY, char direction) {
         this.locationX = locationX;
