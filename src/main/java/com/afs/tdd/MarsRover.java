@@ -13,7 +13,10 @@ public class MarsRover {
     }
 
     public void executeCommand(char command) {
-        this.locationY++;
+        if (this.direction == 'E')
+            this.locationX++;
+        else
+            this.locationY++;
     }
 
     public String getStatus() {
