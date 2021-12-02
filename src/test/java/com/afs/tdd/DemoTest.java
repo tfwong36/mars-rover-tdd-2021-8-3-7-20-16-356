@@ -17,5 +17,18 @@ class DemoTest {
         //then
         assertEquals("0 1 N", result);
     }
+    @Test
+    void should_return_Increment_X_by_1_when_move_given_X0_Y0_Eorth_Move(){
+        //given
+        MarsRover marsRover = new MarsRover(0,0,'E');
+        char Command = 'M';
+
+        //when
+        marsRover.executeCommand(Command);
+        String result = marsRover.getStatus();
+
+        //then
+        assertEquals("1 0 E", result);
+    }
 
 }
