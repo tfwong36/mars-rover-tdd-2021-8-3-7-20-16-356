@@ -40,7 +40,9 @@ public class MarsRover {
         return String.format("%s %s %s", this.locationX, this.locationY, this.direction);
     }
 
-    public String executeCommands(String commands) {
-        return null;
+    public void executeCommands(String commands){
+        for (int index = 0; index < commands.length(); index++){
+            executeCommand(commands.charAt(index));
+        }
     }
 }
