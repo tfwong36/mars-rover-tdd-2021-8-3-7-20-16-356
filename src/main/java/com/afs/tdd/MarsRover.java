@@ -13,14 +13,21 @@ public class MarsRover {
     }
 
     public void executeCommand(char command) {
-        if (this.direction == 'E')
-            this.locationX++;
-        else if (this.direction == 'S')
-            this.locationY--;
-        else if (this.direction == 'W')
-            this.locationX--;
-        else
-            this.locationY++;
+        if (command == 'M'){
+            if (this.direction == 'E')
+                this.locationX++;
+            else if (this.direction == 'S')
+                this.locationY--;
+            else if (this.direction == 'W')
+                this.locationX--;
+            else
+                this.locationY++;
+        } else if (command == 'L'){
+            if (this.direction == 'N')
+                this.direction = 'W';
+        }
+
+
     }
 
     public String getStatus() {
