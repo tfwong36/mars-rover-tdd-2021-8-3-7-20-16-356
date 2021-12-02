@@ -73,7 +73,7 @@ class DemoTest {
     @Test
     void should_return_Turn_North_when_given_X0_Y0_East_Turn_Left(){
         //given
-        MarsRover marsRover = new MarsRover(0,0,'N');
+        MarsRover marsRover = new MarsRover(0,0,'E');
         char Command = 'L';
 
         //when
