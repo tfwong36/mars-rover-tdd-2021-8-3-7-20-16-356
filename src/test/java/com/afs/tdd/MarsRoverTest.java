@@ -3,7 +3,7 @@ package com.afs.tdd;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class DemoTest {
+class MarsRoverTest {
     @Test
     void should_return_Increment_Y_by_1_when_given_OneMove_X0_Y0_North_Move(){
         //given
